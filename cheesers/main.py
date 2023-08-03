@@ -50,7 +50,7 @@ player_2 = Player("", [], [])
 
 def playerSelect():
     # Call the color selector for the player objects
-    player_1.colorPicker(player_1, player_2)
+    Player.colorPicker(player_1, player_2)
 
 
 # GO!

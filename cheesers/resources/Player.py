@@ -9,7 +9,7 @@ class Player:
         # See if king is captured, or if King is only piece left - if so, set check to True
         pass
     
-    def colorPicker(player_1, player_2, choice):
+    def colorPicker(player_1, player_2):
         # Accept input from player to choose color
         print("Player 1, please choose a color: Black or White (b/w)?")
 
