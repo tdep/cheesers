@@ -4,11 +4,7 @@ class Square:
         self.occupied = occupied
         self.piece = piece
 
-    def capture(self, newPiece):
-        if self.occupied == True:
-            self.piece = newPiece
-
-
+# Initializing all square instances
 a8 = Square(("a", "8"), False, None)
 b8 = Square(("b", "8"), False, None)
 c8 = Square(("c", "8"), False, None)
@@ -81,6 +77,7 @@ f1 = Square(("f", "1"), False, None)
 g1 = Square(("g", "1"), False, None)
 h1 = Square(("h", "1"), False, None)
 
+# Creating the board which stores all square instances in a list of lists
 theBoard = [[a8, b8, c8, d8, e8, f8, g8, h8],
             [a7, b7, c7, d7, e7, f7, g7, h7],
             [a6, b6, c6, d6, e6, f6, g6, h6],

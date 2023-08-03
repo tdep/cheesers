@@ -5,8 +5,22 @@ class Player:
         self.captures = captures
         self.check = False
 
+# Player Methods
+
     def checkChecker():
         # See if king is captured, or if King is only piece left - if so, set check to True
+        pass
+
+    def captureTallier():
+        # Counter for the number of capture pieces and a tracker of the pieces captured which prints to the screen
+        pass
+
+    def validMoveChecker():
+        # Checks to see if the move entered by the player is legal. Probably references a dictionary of moves and if it's not there, reject.
+        pass
+
+    def makeAMove():
+        # Prompts the current player to make a move, then calls the validMoveChecker to make sure it's valid, if not, run again.
         pass
     
     def colorPicker(player_1, player_2):

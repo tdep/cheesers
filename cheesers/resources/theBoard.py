@@ -2,8 +2,12 @@ import Square
 
 theBoard = Square.theBoard
 
+def populator():
+    # Populates the board according to the coordinates listed in theBoard object that is passed to it which updates every time a turn is over.
+    pass
+
 def printBoard(board):
-    
+    # Prints the board to the screen
     r = 8
     for row in board:
         i = 0
