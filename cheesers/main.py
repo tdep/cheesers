@@ -4,7 +4,10 @@ from time import sleep
 from itertools import cycle
 from threading import Thread
 import title
+from resources.theBoard import printBoard
 from resources.Player import Player
+from resources.Square import theBoard
+
 
 cheesers = title.cheesers
 
@@ -60,3 +63,4 @@ t.start()
 sleep(5)
 done = True
 start()
+printBoard(theBoard)

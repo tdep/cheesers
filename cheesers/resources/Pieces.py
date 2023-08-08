@@ -67,45 +67,51 @@ class King(Pieces):
 # Initialize all piece instances
 
 # Black pieces
-pawn_b1 = Pawn("b01", ('x','y'), "")
-pawn_b2 = Pawn("b02", ('x','y'), "")
-pawn_b3 = Pawn("b03", ('x','y'), "")
-pawn_b4 = Pawn("b04", ('x','y'), "")
-pawn_b5 = Pawn("b05", ('x','y'), "")
-pawn_b6 = Pawn("b06", ('x','y'), "")
-pawn_b7 = Pawn("b07", ('x','y'), "")
-pawn_b8 = Pawn("b08", ('x','y'), "")
+pawn_b1 = Pawn("b01", ('a', 7), "")
+pawn_b2 = Pawn("b02", ('b', 7), "")
+pawn_b3 = Pawn("b03", ('c', 7), "")
+pawn_b4 = Pawn("b04", ('d', 7), "")
+pawn_b5 = Pawn("b05", ('e', 7), "")
+pawn_b6 = Pawn("b06", ('f', 7), "")
+pawn_b7 = Pawn("b07", ('g', 7), "")
+pawn_b8 = Pawn("b08", ('h', 7), "")
 
-rook_b1 = Rook("b09", ('x','y'), "")
-rook_b2 = Rook("b10", ('x','y'), "")
+rook_b1 = Rook("b09", ('a', 8), "")
+rook_b2 = Rook("b10", ('h', 8), "")
 
-knight_b1 = Knight("b11", ('x','y'), "")
-knight_b2 = Knight("b12", ('x','y'), "")
+knight_b1 = Knight("b11", ('b', 8), "")
+knight_b2 = Knight("b12", ('g', 8), "")
 
-bishop_b1 = Bishop("b13", ('x','y'), "")
-bishop_b2 = Bishop("b14", ('x','y'), "")
+bishop_b1 = Bishop("b13", ('c', 8), "")
+bishop_b2 = Bishop("b14", ('f', 8), "")
 
-queen_b = Queen("b15", ('x','y'), "")
-king_b = King("b16", ('x','y'), "")
+queen_b = Queen("b15", ('d', 8), "")
+king_b = King("b16", ('e', 8), "")
 
-# Black pieces
-pawn_w1 = Pawn("w01", ('x','y'), "")
-pawn_w2 = Pawn("w02", ('x','y'), "")
-pawn_w3 = Pawn("w03", ('x','y'), "")
-pawn_w4 = Pawn("w04", ('x','y'), "")
-pawn_w5 = Pawn("w05", ('x','y'), "")
-pawn_w6 = Pawn("w06", ('x','y'), "")
-pawn_w7 = Pawn("w07", ('x','y'), "")
-pawn_w8 = Pawn("w08", ('x','y'), "")
+blackPieces = [pawn_b1, pawn_b2, pawn_b3, pawn_b4, pawn_b5, pawn_b6, pawn_b7, pawn_b8,
+               rook_b1, knight_b1, bishop_b1, queen_b, king_b, bishop_b2, knight_b2, rook_b2]
 
-rook_w1 = Rook("w09", ('x','y'), "")
-rook_w2 = Rook("w10", ('x','y'), "")
+# White pieces
+pawn_w1 = Pawn("w01", ('a', 2), "")
+pawn_w2 = Pawn("w02", ('b', 2), "")
+pawn_w3 = Pawn("w03", ('c', 2), "")
+pawn_w4 = Pawn("w04", ('d', 2), "")
+pawn_w5 = Pawn("w05", ('e', 2), "")
+pawn_w6 = Pawn("w06", ('f', 2), "")
+pawn_w7 = Pawn("w07", ('g', 2), "")
+pawn_w8 = Pawn("w08", ('h', 2), "")
 
-knight_w1 = Knight("w11", ('x','y'), "")
-knight_w2 = Knight("w12", ('x','y'), "")
+rook_w1 = Rook("w09", ('a', 1), "")
+rook_w2 = Rook("w10", ('h', 1), "")
 
-bishop_w1 = Bishop("w13", ('x','y'), "")
-bishop_w2 = Bishop("w14", ('x','y'), "")
+knight_w1 = Knight("w11", ('b', 1), "")
+knight_w2 = Knight("w12", ('g', 1), "")
 
-queen_w = Queen("w15", ('x','y'), "")
-king_w = King("w16", ('x','y'), "")
+bishop_w1 = Bishop("w13", ('c', 1), "")
+bishop_w2 = Bishop("w14", ('f', 1), "")
+
+queen_w = Queen("w15", ('d', 1), "")
+king_w = King("w16", ('e', 1), "")
+
+whitePieces = [pawn_w1, pawn_w2, pawn_w3, pawn_w4, pawn_w5, pawn_w6, pawn_w7, pawn_w8,
+               rook_w1, knight_w1, bishop_w1, queen_w, king_w, bishop_w2, knight_w2, rook_w2]

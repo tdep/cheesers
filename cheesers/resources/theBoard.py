@@ -1,10 +1,6 @@
-import Square
+# import Square
 
-theBoard = Square.theBoard
-
-def populator():
-    # Populates the board according to the coordinates listed in theBoard object that is passed to it which updates every time a turn is over.
-    pass
+# theBoard = Square.theBoard
 
 def printBoard(board):
     # Prints the board to the screen
@@ -17,7 +13,7 @@ def printBoard(board):
                     print(row[i].piece, end=" | ")
                     i += 1
                 else:
-                    print(row[i].piece, end=" | ")
+                    print(row[i].piece + " | " + str(r))
                     i += 1
             else:
                 if row[i].coordinate[0] != "h":
@@ -26,10 +22,11 @@ def printBoard(board):
                 else:
                     print("   " + " | " + str(r))
                     i += 1
+        # print()
         if r > 1:
             print(' -  +  -  +  -  +  -  +  -  +  -  +  -  +  -  |')
         r -= 1
     print('_____________________________________________ |')
     print(' A     B     C     D     E     F     G     H')
 
-printBoard(theBoard)
+# printBoard(theBoard)
